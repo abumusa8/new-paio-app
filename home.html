@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tawlind cdn here -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyui cdn here -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>  
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-2">            
+                   <h1 class="text-white font-bold text-3xl"><span id="moneys">4000</span></h1>
+                    <h1>Available Balance</h1><br>
+                    <h2 class="text-white">🔥 Welcome to Payooo!</h2>
+                    <p class="text-green-400 ">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                <div class="mt-6">
+                    <button id="addmoney" class="btn bg-white">Add Money</button>
+                    <button id="cashoutBtn" class="btn bg-white">Cashout</button>
+                    <button id="trangaction" class="btn bg-white">history</button>
+                </div>
+                <div class="divider"></div>
+                <!-- Add Money from start here -->
+                <div id="addmoney-from" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Add Money</span>
+                        </label>
+                        <input id="number-input" type="text" placeholder="Add Money" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Password</span>
+                        </label>
+                        <input id="password-input" type="password" placeholder="password" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="addmoney-btn" class="btn btn-primary">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+                <!-- Add Money from end here -->
+
+                <!-- cash out start here -->
+                <div id="cashout-from" class=" hidden  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Cashout</span>
+                        </label>
+                        <input id="number-cashout" type="text" placeholder="cashout" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Password</span>
+                        </label>
+                        <input id="password" type="password" placeholder="password" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="cashout-btn" class="btn btn-primary">Cashout</button>
+                      </div>
+                    </form>
+                  </div>
+                <!-- cash out end here -->
+                 <!-- trangaction history start -->
+                 <div id="my-history" class="hidden">
+                  <h2>Trangction history</h2>
+                 </div>
+
+                 <div id="trangaction-container" class="hidden">
+
+                 </div>
+                 <!-- trangaction history end -->
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="./js/home.js"></script>
+    <script src="./js/coomon.js"></script>
+</body>
+</html>
